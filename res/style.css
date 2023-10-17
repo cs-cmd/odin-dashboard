@@ -1,0 +1,95 @@
+:root {
+    --main-bg: #fff;
+    --main-bg-tint: #e6e6e6;
+    --scndry-color: #38d6ab;
+    --accent-color: #D63862;
+    --text-color: #000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100vh;
+    color: var(--text-color);
+}
+
+body {
+    background-color: black;
+    height: 100%;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100%;
+}
+
+.main-container a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.main-container a:visited, .main-container a:link {
+    color: var(--text-color);
+}
+.main-container a:active {
+    color: var(--main-bg-tint);
+}
+
+.sidebar {
+    background-color: var(--scndry-color);
+    grid-column: 1/2;
+    grid-row: 1/6;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    padding-left: 1rem;
+}
+
+.sidebar h1 {
+    display: grid;
+    align-items: center;
+}
+.sidebar ul {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+
+.sidebar-header {
+    display:grid;
+    grid-template-columns: auto auto;
+    text-align: start;
+    padding-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-content, .header-content {
+    grid-column: 2/4;
+}
+
+.header-content {
+    background-color: var(--main-bg);
+    grid-row: 1/2;
+}
+
+.main-content {
+    background-color: var(--main-bg-tint);
+    grid-row: 2/6;
+}
